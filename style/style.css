@@ -1,0 +1,49 @@
+nav {
+    background-color: #A1FFFD;
+}
+
+.logo-texto {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 64px;
+}
+
+.secciones-nav{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 24px;
+}
+
+.bajada-imagenes {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 24px;
+}
+
+.titulo-articulos {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.contenido-articulos{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.articulos {
+    margin-left: 100px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+main{
+    background-color: #3D8F8D;
+}
+
+footer{
+    background-color: #8F522F;
+}
+
+.texto-footer{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
