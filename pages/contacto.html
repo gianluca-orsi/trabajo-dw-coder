@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Aeroskky! Viajes</title>
+</head>
+
+<body>
+    <nav>
+        <img src="../img/logo.png" height="64px" width="90px" alt="logo">
+        <h1>
+            Aerosky! 
+        </h1>
+        <ul>
+            <li><a href="../index.html">Inicio</a> </li>
+            <li><a href="../pages/servicios.html">Servicios</a> </li>
+            <li><a href="../pages/vuelos.html">Vuelos</a></li>
+            <li><a href="../pages/fotos.html">Fotos</a></li>
+            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <main>
+        <form id="Formulario-contacto">
+            <fieldset>
+                <legend>Consultas</legend>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre"> <br>
+
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="Apellido" id="Apellido" placeholder="Apellido"> <br>
+
+                <label for="Teléfono">Teléfono:</label>
+                <input type="number" name="Telefono" id="Telefono" placeholder="0123456789"> <br>
+
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" id="Email" placeholder="email@email.com"> <br>
+
+                <label for="Texto-radio" value="Texto-radio">Género:</label>
+                <input type="radio" value="Género" name="Género" id="M">
+                <label for="M">M</label> 
+                <input type="radio" value="Género" name="Género" id="F">
+                <label for="F">F</label> 
+                <input type="radio" value="Género" name="Género" id="X">
+                <label for="X">X</label> <br>
+
+                <label for="Metodo-contacto" value="Metodo-contacto">Método de contacto preferido:</label> <br>
+                <input type="checkbox" name="Metodo-contacto" value="Metodo-contacto" id="Contacto-telefono">
+                <label for="Contacto-telefono">Teléfono</label> <br>
+                <input type="checkbox" name="Metodo-contacto" value="Metodo-contacto" id="Contacto-email">
+                <label for="Contacto-email">Email</label> <br>
+
+                <label for="Tipo-consulta">Tipo de consulta:</label> 
+                <select name="Tipo de consulta" id="Tipo-consulta">
+                    <option value="Reserva">Reserva</option>
+                    <option value="Precios">Precios</option>
+                    <option value="Cancelacion">Cancelación</option>
+                    <option value="Otro">Otro</option>
+                </select> <br>
+
+                <label for="Texto-consulta">Consulta:</label> <br>
+                <textarea id="Texto-consulta" cols="50" rows="6" placeholder="Escriba su consulta aquí"></textarea> <br>
+
+                <input type="reset" value="Restablecer formulario" id="Restablecer" name="Restablecer">
+                <input type="submit" value="Enviar consulta" id="Enviar" name="Enviar">
+                <p>Al hacer click en "Enviar" usted acepta que sus datos sean guardados para usos promocionales.</p>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <img src="../img/mapa.png" alt="mapa">
+        <h2>
+            Contacto
+        </h2>
+        <ul>
+            <li>Tel.: 3400-12345678</li>
+            <li>Mail: info@aerosky.com.ar </li>
+            <li>Dirección: Irigoyen 955, Villa Constitución.</li>
+            <li>Horario de atención: de 9 hs. a 15 hs.</li>
+            <li><a href="../pages/contacto.html#Formulario-contacto">Formulario de contacto</a> </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
