@@ -2,20 +2,34 @@ nav {
     background-color: #A1FFFD;
 }
 
+main{
+    background-color: #3D8F8D;
+}
+
+footer{
+    background-color: #8F522F;
+}
+
+a {
+    text-decoration: none;
+}
+
 .logo-texto {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 64px;
 }
 
-.secciones-nav{
+.texto-secciones-bajada-imagenes{
     font-family: 'Libre Franklin', sans-serif;
     font-size: 24px;
+    list-style: none;
 }
 
-.bajada-imagenes {
+.texto-footer{
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
+
 
 .titulo-articulos {
     font-family: 'Poppins', sans-serif;
@@ -35,15 +49,14 @@ nav {
     margin-bottom: 40px;
 }
 
-main{
-    background-color: #3D8F8D;
+.texto-contacto {
+    font-size: 28px;
+    text-decoration: underline;
 }
 
-footer{
-    background-color: #8F522F;
-}
-
-.texto-footer{
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 20px;
+main img {
+    padding: 40px;
+    border: black;
+    border-style: solid;
+    margin: 40px;
 }
