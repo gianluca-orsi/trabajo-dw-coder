@@ -1,12 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 nav {
     background-color: #A1FFFD;
 }
 
-main{
-    background-color: #3D8F8D;
+main {
+    /* background-color: #3D8F8D; */
+    background-image:url(../img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-footer{
+footer {
     background-color: #8F522F;
 }
 
@@ -14,29 +22,39 @@ a {
     text-decoration: none;
 }
 
-.logo-texto {
+main img {
+    padding: 40px;
+    border: black;
+    border-style: solid;
+    margin: 40px;
+}
+
+.logoImg {
+    height: 64px;
+    width: 90px;
+}
+.logoTexto {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 64px;
 }
 
-.texto-secciones-bajada-imagenes{
+.textoSeccionesBajadaImagenes {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 24px;
-    list-style: none;
+    list-style-type: circle;
 }
 
-.texto-footer{
+.textoFooter {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
 }
 
-
-.titulo-articulos {
+.tituloArticulos {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
 }
 
-.contenido-articulos{
+.contenidoArticulos {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     padding-left: 60px;
@@ -49,14 +67,16 @@ a {
     margin-bottom: 40px;
 }
 
-.texto-contacto {
+.textoContacto {
     font-size: 28px;
     text-decoration: underline;
 }
 
-main img {
-    padding: 40px;
-    border: black;
-    border-style: solid;
-    margin: 40px;
+/* para todas las listas excepto las dos ultimas de index */
+.paddingListas {
+    padding-left: 40px;
+}
+
+.listasFondoIndex {
+    list-style-position: inside;
 }
