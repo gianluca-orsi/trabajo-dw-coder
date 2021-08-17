@@ -4,10 +4,32 @@
 }
 nav {
     background-color: #A1FFFD;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+ul ul{
+    position: absolute;
+    display: none;
+}
+
+ul ul li{
+    display: block;
+    background-color: #a1fffd71;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+ul li:hover ul{
+    display: block;
 }
 
 main {
-    /* background-color: #3D8F8D; */
     background-image:url(../img/fondo.jpg);
     background-position: center;
     background-size: cover;
@@ -29,6 +51,7 @@ main img {
     margin: 40px;
 }
 
+
 .logoImg {
     height: 64px;
     width: 90px;
@@ -49,22 +72,33 @@ main img {
     font-size: 20px;
 }
 
+.imgPrincipalIndex{
+    text-align: center;    
+}
+
+.flexIndex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.divIndex{
+    padding: 25px;
+    background-color:rgba(105, 96, 96, 0.212);
+    width:45vw;
+    margin: 1vh 0vw;
+}
+
 .tituloArticulos {
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
+    text-align: center;
 }
 
 .contenidoArticulos {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-.articulos {
-    margin-left: 100px;
-    margin-right: 40px;
-    margin-bottom: 40px;
 }
 
 .textoContacto {
@@ -72,11 +106,8 @@ main img {
     text-decoration: underline;
 }
 
-/* para todas las listas excepto las dos ultimas de index */
-.paddingListas {
-    padding-left: 40px;
-}
-
 .listasFondoIndex {
     list-style-position: inside;
+    margin-left: 25px;
 }
+
