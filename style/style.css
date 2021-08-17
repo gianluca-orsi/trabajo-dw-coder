@@ -74,6 +74,13 @@ main img {
   margin-right: 1vw;
 }
 
+.flexNavFooter {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .textoSeccionesBajadaImagenes {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 24px;
