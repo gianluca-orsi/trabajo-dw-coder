@@ -44,13 +44,9 @@ a {
     text-decoration: none;
 }
 
-main img {
-    padding: 40px;
-    border: black;
-    border-style: solid;
-    margin: 40px;
+video {
+    max-width: 80vw;
 }
-
 
 .logoImg {
     height: 64px;
@@ -62,23 +58,52 @@ main img {
 }
 
 .flexNavLogo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 1vh;
+    padding-left: 0.2vw;
 }
 
 .flexNavItems{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin-right: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 1vw;
 }
 
 .flexNavFooter {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexFotos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexIndex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.flexIndexCol {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.fotosImg {
+    padding: 1vh 1vw;
+    max-width: 1024px;
+    max-height: 576px;
 }
 
 .textoSeccionesBajadaImagenes {
@@ -92,17 +117,6 @@ main img {
     font-size: 20px;
 }
 
-.imgPrincipalIndex{
-    text-align: center;    
-}
-
-.flexIndex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-}
 .divIndex{
     padding: 25px;
     background-color:rgba(105, 96, 96, 0.212);
