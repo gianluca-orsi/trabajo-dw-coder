@@ -8,27 +8,6 @@ nav {
     top: 0px;
 }
 
-nav ul li{
-    display: inline-block;
-}
-
-ul ul{
-    position: absolute;
-    display: none;
-}
-
-ul ul li{
-    display: block;
-    background-color: #a1fffd71;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-}
-
-ul li:hover ul{
-    display: block;
-}
-
 main {
     background-image:url(../img/fondo.jpg);
     background-position: center;
@@ -59,31 +38,30 @@ video {
 
 .flexNavLogo {
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     padding-top: 1vh;
     padding-left: 0.2vw;
 }
 
-.flexNavItems{
+.flexNavItems ul{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 1vw;
-}
-
-.flexNavFooter {
-    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
 }
 
-.flexFotos {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+.flexNavItems li{
+    list-style-type: none;
+    padding: 1vh 1.2vw;
+}
+
+.flexNavItems li:hover {
+    background-color:#ffffff79;
+}
+
+.flexNavItems li:visited {
+    color: black;
 }
 
 .flexIndex {
@@ -98,31 +76,41 @@ video {
     display: flex;
     flex-flow: column;
     align-items: center;
+    padding-top: 1vh;
 }
+
+/* para seccion fotos */
+
+.flexFotos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* solo para img en seccion fotos */
 
 .fotosImg {
     padding: 1vh 1vw;
-    max-width: 1024px;
-    max-height: 576px;
+    max-width: 80vw;
 }
+
+/* para texto en nav y bajada del video en index*/
 
 .textoSeccionesBajadaImagenes {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 24px;
-    list-style-type: circle;
 }
 
-.textoFooter {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 20px;
-}
+/* para index */
 
 .divIndex{
     padding: 25px;
     background-color:rgba(105, 96, 96, 0.212);
-    width:45vw;
+    max-width: 45vw;
     margin: 1vh 0vw;
 }
+
+/* titulo y contenido en articulos de index */
 
 .tituloArticulos {
     font-family: 'Poppins', sans-serif;
@@ -135,13 +123,31 @@ video {
     font-size: 24px;
 }
 
-.textoContacto {
-    font-size: 28px;
-    text-decoration: underline;
-}
-
+/* para la mayoría de listas como las del fondo de index o contacto en footer */
 .listasFondoIndex {
     list-style-position: inside;
     margin-left: 25px;
 }
 
+/* para footer */
+
+.textoFooter {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+.textoContacto {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.flexNavFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexNavFooter p, .flexNavFooter ul {
+    padding-left: 0.5vw;
+}
