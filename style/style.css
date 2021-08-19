@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    font-size: 62.5%;
+}
 nav {
     background-color: #A1FFFD;
-    position: sticky;
     top: 0px;
 }
 
@@ -24,7 +27,7 @@ a {
 }
 
 video {
-    max-width: 80vw;
+    max-width: 95vw;
 }
 
 .logoImg {
@@ -64,21 +67,6 @@ video {
     color: black;
 }
 
-.flexIndex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-}
-
-.flexIndexCol {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding-top: 1vh;
-}
-
 /* para seccion fotos */
 
 .flexFotos {
@@ -98,15 +86,15 @@ video {
 
 .textoSeccionesBajadaImagenes {
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 /* para index */
 
 .divIndex{
-    padding: 25px;
+    padding: 1vw 1vh;
     background-color:rgba(105, 96, 96, 0.212);
-    max-width: 45vw;
+    max-width: 80vw;
     margin: 1vh 0vw;
 }
 
@@ -114,13 +102,13 @@ video {
 
 .tituloArticulos {
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 4rem;
     text-align: center;
 }
 
 .contenidoArticulos {
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 /* para la mayoría de listas como las del fondo de index o contacto en footer */
@@ -151,3 +139,156 @@ video {
 .flexNavFooter p, .flexNavFooter ul {
     padding-left: 0.5vw;
 }
+
+.gridNosotros {
+    display: grid;
+    grid-template-areas: 
+        "foto1"
+        "persona1" 
+        "foto2" 
+        "persona2"
+        "foto3"
+        "persona3"
+        "foto4" 
+        "persona4";
+        grid-template-columns: 1fr;
+        grid-template-rows: (8, 1fr);
+        justify-items: center;
+        align-items: center;
+    padding: 1vh 1vw;
+}
+
+.foto1 {
+    grid-area: foto1;
+    max-width: 30vw;
+    padding: 1vh 1vw;
+}
+
+.foto2 {
+    grid-area: foto2;
+    max-width: 30vw;
+    padding: 0vh 1vw;
+}
+
+.foto3 {
+    grid-area: foto3;
+    max-width: 30vw;
+    padding: 1vh 1vw;
+}
+
+.foto4 {
+    grid-area: foto4;
+    max-width: 30vw;
+    padding: 1vh 1vw;
+}
+
+.persona1 {
+    grid-area: persona1;
+}
+
+.persona2 {
+    grid-area: persona2;
+}
+
+.persona3 {
+    grid-area: persona3;
+}
+
+.persona4 {
+    grid-area: persona4;
+}
+
+.textoFotosNosotros {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+}
+
+.paddingNosotros {
+    padding: 1vh 1vw;
+}
+
+.gridNosotros > img, .gridNosotros > p {
+    margin: 0.5vh 0.5vw;
+    padding: 0.5vh 0.5vw;
+}
+
+#gridVideo {
+    padding-top: 1vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    }
+
+#gridIndex {
+    display: grid;
+    grid-template-areas: 
+    "articulo1"
+    "articulo2"
+    "articulo3"
+    "articulo4";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    justify-items: center;
+}
+
+.articulo1 {
+    grid-area: articulo1;
+}
+
+.articulo2 {
+    grid-area: articulo2;
+}
+
+.articulo3 {
+    grid-area: articulo3;
+}
+
+.articulo4 {
+    grid-area: articulo4;
+}
+
+@media only screen and (min-width: 768px){
+    .gridNosotros {
+        grid-template-areas: 
+        "foto1 persona1"
+        "foto2 persona2"
+        "foto3 persona3"
+        "foto4 persona4";
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: (4, 1fr);
+        }
+
+    video {
+        max-width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .gridNosotros {
+        grid-template-areas: 
+        "foto1 persona1 foto2 persona2"
+        "foto3 persona3 foto4 persona4";
+        grid-template-columns: (4, 1fr);
+        grid-template-rows: (2, 1fr);
+        align-items: center;
+        }
+    
+    #gridIndex {
+        grid-template-areas: 
+        "articulo1 articulo2"
+        "articulo3 articulo4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        }
+
+    .divIndex {
+        max-width: 45vw;
+    }
+
+    video {
+        max-width: 80vw;
+    }
+}
+
