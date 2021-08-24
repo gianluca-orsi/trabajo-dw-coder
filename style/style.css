@@ -57,10 +57,34 @@ video {
 .flexNavItems li{
     list-style-type: none;
     padding: 1vh 1.2vw;
+    transition: all 1s;
 }
 
 .flexNavItems li:hover {
-    background-color:#ffffff79;
+
+    animation-name: gradientAnim;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    background-image: linear-gradient(to top,#ffffff79, #ffffff79 );
+}
+
+@keyframes gradientAnim {
+    0% {
+        background-image: linear-gradient(to top,#ffffff79, #ffffff00 );
+    }
+
+    25% {
+        background-image: linear-gradient(to top,#ffffff79, #ffffff1a );
+    }
+    50% {
+        background-image: linear-gradient(to top,#ffffff79, #ffffff50 );
+    }
+    75% {
+        background-image: linear-gradient(to top,#ffffff79, #ffffff6b );
+    }
+    100% {
+        background-image: linear-gradient(to top,#ffffff79, #ffffff79 );
+    }
 }
 
 .flexNavItems li:visited {
@@ -80,6 +104,31 @@ video {
 .fotosImg {
     padding: 1vh 1vw;
     max-width: 80vw;
+}
+
+.fotosImg:hover {
+    animation-name: escalarImg;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    }
+    
+
+@keyframes escalarImg {
+    25% {
+        transform: scale(0.95);
+    }
+    40% {
+        transform: scale(0.92);
+    }
+    50%{
+        transform: scale(0.90);
+    }
+    60% {
+        transform: scale(0.92);
+    }
+    75%{
+        transform: scale(0.95);
+    }
 }
 
 /* para texto en nav y bajada del video en index*/
@@ -256,8 +305,8 @@ video {
         "foto2 persona2"
         "foto3 persona3"
         "foto4 persona4";
-        grid-template-columns: (2, 1fr);
-        grid-template-rows: (4, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         }
 
     video {
@@ -270,10 +319,14 @@ video {
         grid-template-areas: 
         "foto1 persona1 foto2 persona2"
         "foto3 persona3 foto4 persona4";
-        grid-template-columns: (4, 1fr);
-        grid-template-rows: (2, 1fr);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         align-items: center;
         }
+    
+    .textoFotosNosotros {
+        font-size: 1.6rem;
+    }        
     
     #gridIndex {
         grid-template-areas: 
