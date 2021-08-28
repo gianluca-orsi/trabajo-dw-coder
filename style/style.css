@@ -5,17 +5,19 @@
 
 html {
     font-size: 62.5%;
+    
 }
 nav {
     background-color: #A1FFFD;
     top: 0px;
 }
 
-main {
+body {
     background-image:url(../img/fondo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 0%;
 }
 
 footer {
@@ -30,64 +32,17 @@ video {
     max-width: 95vw;
 }
 
+main div video {
+    padding: 1vw 1vh;
+}
+
 .logoImg {
-    height: 64px;
-    width: 90px;
+    height: 57px;
+    width: 80px;
 }
 .logoTexto {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 64px;
-}
-
-.flexNavLogo {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 1vh;
-    padding-left: 0.2vw;
-}
-
-.flexNavItems ul{
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.flexNavItems li{
-    list-style-type: none;
-    padding: 1vh 1.2vw;
-    transition: all 1s;
-}
-
-.flexNavItems li:hover {
-
-    animation-name: gradientAnim;
-    animation-iteration-count: 1;
-    animation-duration: 5s;
-    background-image: linear-gradient(to top,#ffffff79, #ffffff79 );
-}
-
-@keyframes gradientAnim {
-    0% {
-        background-image: linear-gradient(to top,#ffffff79, #ffffff00 );
-    }
-
-    25% {
-        background-image: linear-gradient(to top,#ffffff79, #ffffff1a );
-    }
-    50% {
-        background-image: linear-gradient(to top,#ffffff79, #ffffff50 );
-    }
-    75% {
-        background-image: linear-gradient(to top,#ffffff79, #ffffff6b );
-    }
-    100% {
-        background-image: linear-gradient(to top,#ffffff79, #ffffff79 );
-    }
-}
-
-.flexNavItems li:visited {
     color: black;
 }
 
@@ -109,31 +64,51 @@ video {
 .fotosImg:hover {
     animation-name: escalarImg;
     animation-duration: 1s;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
     }
     
 
 @keyframes escalarImg {
-    25% {
-        transform: scale(0.95);
+    20% {
+        transform: scale(0.99);
+    }
+    30% {
+        transform: scale(0.98);
     }
     40% {
-        transform: scale(0.92);
+        transform: scale(0.97);
     }
     50%{
-        transform: scale(0.90);
+        transform: scale(0.96);
     }
     60% {
-        transform: scale(0.92);
+        transform: scale(0.97);
     }
-    75%{
-        transform: scale(0.95);
+    70% {
+        transform: scale(0.98);
+    }
+    80%{
+        transform: scale(0.99);
     }
 }
 
 /* para texto en nav y bajada del video en index*/
 
-.textoSeccionesBajadaImagenes {
+.textoNavSecciones {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2.4rem;
+}
+
+.textoNavSecciones a:hover {
+    background-image: linear-gradient(to top,#ffffff79, #ffffff38 );
+    color: black;
+}
+
+.textoNavSecciones a {
+    color: black;
+}
+
+.textoImgPrincipalIndex {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 2.4rem;
 }
@@ -152,12 +127,14 @@ video {
 .tituloArticulos {
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
+    line-height: 4.2rem;
     text-align: center;
 }
 
 .contenidoArticulos {
     font-family: 'Poppins', sans-serif;
     font-size: 2.4rem;
+    line-height: 2.8rem;
 }
 
 /* para la mayoría de listas como las del fondo de index o contacto en footer */
@@ -170,11 +147,11 @@ video {
 
 .textoFooter {
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .textoContacto {
-    font-size: 28px;
+    font-size: 2.4rem;
     text-decoration: underline;
 }
 
@@ -189,76 +166,69 @@ video {
     padding-left: 0.5vw;
 }
 
-.gridNosotros {
-    display: grid;
-    grid-template-areas: 
-        "foto1"
-        "persona1" 
-        "foto2" 
-        "persona2"
-        "foto3"
-        "persona3"
-        "foto4" 
-        "persona4";
-        grid-template-columns: 1fr;
-        grid-template-rows: (8, 1fr);
-        justify-items: center;
-        align-items: center;
-    padding: 1vh 1vw;
-}
-
-.foto1 {
-    grid-area: foto1;
-    max-width: 30vw;
-    padding: 1vh 1vw;
-}
-
-.foto2 {
-    grid-area: foto2;
-    max-width: 30vw;
-    padding: 0vh 1vw;
-}
-
-.foto3 {
-    grid-area: foto3;
-    max-width: 30vw;
-    padding: 1vh 1vw;
-}
-
-.foto4 {
-    grid-area: foto4;
-    max-width: 30vw;
-    padding: 1vh 1vw;
-}
-
-.persona1 {
-    grid-area: persona1;
-}
-
-.persona2 {
-    grid-area: persona2;
-}
-
-.persona3 {
-    grid-area: persona3;
-}
-
-.persona4 {
-    grid-area: persona4;
-}
-
 .textoFotosNosotros {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.4rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
 }
 
-.paddingNosotros {
-    padding: 1vh 1vw;
+.fondoRowsNosotros {
+    background-color:rgba(105, 96, 96, 0.212);
+    padding: 0.5vw 0.5vh;
 }
 
-.gridNosotros > img, .gridNosotros > p {
-    margin: 0.5vh 0.5vw;
-    padding: 0.5vh 0.5vw;
+.fondoRowsContacto {
+    padding: 1vw 1vh;
+    margin: 1vw 1vh;
+    border: 1px dotted black;
+    background-color: rgba(105, 96, 96, 0.548);
+    font-weight: 600;
+}
+
+.nombreTextoFotosNosotros {
+    font-weight: 900;
+}
+
+.textoAtencionVuelosSuperior {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.textoAtencionVuelosInferior {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+.fondoCajaAtencionVuelos {
+    background-color: rgba(105, 96, 96, 0.548);
+    border: 2px solid black;
+}
+
+.textoDescripcionAeropuertosVuelos {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    background-color: rgba(105, 96, 96, 0.212);
+    border: 1px solid black;
+    margin: 0.5vw 0.5vh;
+    padding: 0.5vw 0.5vh;
+    
+}
+
+.textoNombreAeropuertosVuelos {
+    font-weight: 600;
+}
+
+.textoFormularioConsultas {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 300;
 }
 
 #gridVideo {
@@ -269,73 +239,15 @@ video {
     justify-items: center;
     }
 
-#gridIndex {
-    display: grid;
-    grid-template-areas: 
-    "articulo1"
-    "articulo2"
-    "articulo3"
-    "articulo4";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    justify-content: center;
-    justify-items: center;
-}
-
-.articulo1 {
-    grid-area: articulo1;
-}
-
-.articulo2 {
-    grid-area: articulo2;
-}
-
-.articulo3 {
-    grid-area: articulo3;
-}
-
-.articulo4 {
-    grid-area: articulo4;
-}
-
 @media only screen and (min-width: 768px){
-    .gridNosotros {
-        grid-template-areas: 
-        "foto1 persona1"
-        "foto2 persona2"
-        "foto3 persona3"
-        "foto4 persona4";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        }
 
     video {
         max-width: 80vw;
     }
 }
 
-@media only screen and (min-width: 1200px){
-    .gridNosotros {
-        grid-template-areas: 
-        "foto1 persona1 foto2 persona2"
-        "foto3 persona3 foto4 persona4";
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-        }
+@media only screen and (min-width: 1200px){        
     
-    .textoFotosNosotros {
-        font-size: 1.6rem;
-    }        
-    
-    #gridIndex {
-        grid-template-areas: 
-        "articulo1 articulo2"
-        "articulo3 articulo4";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        }
-
     .divIndex {
         max-width: 45vw;
     }

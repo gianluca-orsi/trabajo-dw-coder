@@ -9,80 +9,135 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,100&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../img/icon32x32.png" sizes="32x32">
     <title>Aeroskky! Viajes</title>
 </head>
 
 <body>
-    <nav>
-        <div class="flexNavLogo">
-            <a href="../index.html" alt="Logo">
-                <img class="logoImg" src="../img/logo.png" alt="logo">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand logoTexto" href="../index.html">
+                <img class="logoImg d-inline-block align-text-top" src="../img/logo.png" >Aerosky!
             </a>
-            <p class="logoTexto display">Aerosky!</p>
-        </div>                
-        
-        <div class="flexNavItems">
-            <ul class="textoSeccionesBajadaImagenes">
-                <li><a href="../index.html">Inicio</a> </li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/vuelos.html">Vuelos</a></li>
-                <li><a href="../pages/fotos.html">Fotos</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse textoNavSecciones" id="navbarNav">
+                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link" href="../pages/fotos.html">Fotos</a>
+                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                <a class="nav-link" href="../pages/vuelos.html">Vuelos</a>
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </div>    
         </div>
     </nav>
 
     <main>
         <br>
-        <form id="Formulario-contacto">
-            <fieldset>
-                <legend>Consultas</legend>
-                <label for="Nombre">Nombre:</label>
-                <input type="text" name="Nombre" id="Nombre" placeholder="Nombre"> <br>
 
-                <label for="Apellido">Apellido:</label>
-                <input type="text" name="Apellido" id="Apellido" placeholder="Apellido"> <br>
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col-xl-8 col-lg-8 fondoCajaAtencionVuelos">
+                    <p class="textoAtencionVuelosSuperior">
+                        Consultas
+                    </p>
+                    <p class="textoAtencionVuelosInferior">
+                        En esta página nos podrás dejar tus consultas acerca de disponibilidad de destinos, precios y comodidades, entre otras.
+                        <br>
+                        Una vez completado y enviado el formulario, recibirás una respuesta en menos de dos días hábiles.
+                    </p>
+                </div>
+            </div>
+            <form id="Formulario-contacto" class="row fondoRowsContacto textoFormularioConsultas">
+                <div class="col-xl-3 col-lg-6 col-md-12">
+                    <label for="Nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre">
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-12">
+                    <label for="Apellido" class="form-label">Apellido:</label>
+                    <input type="text" class="form-control" name="Apellido" id="Apellido" placeholder="Apellido">
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-12">
+                    <label for="Teléfono" class="form-label">Teléfono:</label>
+                    <input type="number" class="form-control" name="Telefono" id="Telefono" placeholder="0123456789">
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-12 ">
+                    <label for="Email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" name="Email" id="Email" placeholder="email@email.com">
+                </div>
+                
+                <div class="col-12-xl">
+                    <br>
+                </div>
 
-                <label for="Teléfono">Teléfono:</label>
-                <input type="number" name="Telefono" id="Telefono" placeholder="0123456789"> <br>
+                <div class="col-xl-4 col-md-12 align-self-center">
+                    <label for="Texto-radio" value="Texto-radio">Género: </label>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" value="Género" name="Género" id="M">
+                        <label for="M">M</label> 
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" value="Género" name="Género" id="F">
+                        <label for="F">F</label> 
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" value="Género" name="Género" id="X">
+                        <label for="X">X</label>
+                    </div>
+                </div>
 
-                <label for="Email">Email:</label>
-                <input type="email" name="Email" id="Email" placeholder="email@email.com"> <br>
+                <div class="col-xl-4 col-md-12 align-self-center">
+                        <label for="Metodo-contacto" value="Metodo-contacto">Método de contacto preferido:</label>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Metodo-contacto" value="Metodo-contacto" id="Contacto-telefono">
+                        <label for="Contacto-telefono">Teléfono</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" class="form-check-input" name="Metodo-contacto" value="Metodo-contacto" id="Contacto-email">
+                        <label for="Contacto-email">Email</label>
+                    </div>
+                </div>
 
-                <label for="Texto-radio" value="Texto-radio">Género:</label>
-                <input type="radio" value="Género" name="Género" id="M">
-                <label for="M">M</label> 
-                <input type="radio" value="Género" name="Género" id="F">
-                <label for="F">F</label> 
-                <input type="radio" value="Género" name="Género" id="X">
-                <label for="X">X</label> <br>
+                <div class="col-xl-4 col-md-12">
+                    <label for="Tipo-consulta">Tipo de consulta:</label> 
+                    <div class="form-check form-check-inline">
+                        <select name="Tipo de consulta" class="form-select" id="Tipo-consulta">
+                            <option value="Reserva">Reserva</option>
+                            <option value="Precios">Precios</option>
+                            <option value="Cancelacion">Cancelación</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="col-xl-8">
+                    <label for="Texto-consulta">Consulta:</label> <br>
+                    <textarea id="Texto-consulta" class="form-control" rows="5" placeholder="Escriba su consulta aquí"></textarea> <br>
+                </div>
 
-                <label for="Metodo-contacto" value="Metodo-contacto">Método de contacto preferido:</label> <br>
-                <input type="checkbox" name="Metodo-contacto" value="Metodo-contacto" id="Contacto-telefono">
-                <label for="Contacto-telefono">Teléfono</label> <br>
-                <input type="checkbox" name="Metodo-contacto" value="Metodo-contacto" id="Contacto-email">
-                <label for="Contacto-email">Email</label> <br>
+                <div class="col-12">
+                    <div class="form-check form-check-inline"> 
+                        <button class="btn btn-light" type="reset" value="Restablecer formulario" id="Restablecer" name="Restablecer">
+                            Restablecer formulario
+                        </button>
+                    </div>
+                    <div class="form-check form-check-inline">  
+                        <button class="btn btn-light" type="submit" value="Enviar consulta" id="Enviar" name="Enviar">
+                            Enviar consulta
+                        </button>
+                        
+                    </div>
+                <p><br>Al hacer click en "Enviar" usted acepta que sus datos sean guardados para usos promocionales.</p>
+                </div>
+            </form>
+        </div>
 
-                <label for="Tipo-consulta">Tipo de consulta:</label> 
-                <select name="Tipo de consulta" id="Tipo-consulta">
-                    <option value="Reserva">Reserva</option>
-                    <option value="Precios">Precios</option>
-                    <option value="Cancelacion">Cancelación</option>
-                    <option value="Otro">Otro</option>
-                </select> <br>
+        <div class="row">
 
-                <label for="Texto-consulta">Consulta:</label> <br>
-                <textarea id="Texto-consulta" cols="50" rows="6" placeholder="Escriba su consulta aquí"></textarea> <br>
-
-                <input type="reset" value="Restablecer formulario" id="Restablecer" name="Restablecer">
-                <input type="submit" value="Enviar consulta" id="Enviar" name="Enviar">
-                <p>Al hacer click en "Enviar" usted acepta que sus datos sean guardados para usos promocionales.</p>
-            </fieldset>
-        </form>
-        <hr>
+        </div>
     </main>
 
     <footer>
@@ -102,6 +157,7 @@
         </div>
         </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>

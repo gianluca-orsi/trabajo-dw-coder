@@ -9,39 +9,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,100&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/style.css">   
     <link rel="icon" href="../img/icon32x32.png" sizes="32x32">
     <title>Aeroskky! Viajes</title>
 </head>
 
 <body>
-    <nav>
-        <div class="flexNavLogo">
-            <a href="../index.html" alt="Logo">
-                <img class="logoImg" src="../img/logo.png" alt="logo">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand logoTexto" href="../index.html">
+                <img class="logoImg d-inline-block align-text-top" src="../img/logo.png" >Aerosky!
             </a>
-            <p class="logoTexto display">Aerosky!</p>
-        </div>                
-        
-        <div class="flexNavItems">
-            <ul class="textoSeccionesBajadaImagenes">
-                <li><a href="../index.html">Inicio</a> </li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/vuelos.html">Vuelos</a></li>
-                <li><a href="../pages/fotos.html">Fotos</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse textoNavSecciones" id="navbarNav">
+                <a class="nav-link" href="../index.html">Inicio</a>
+                <a class="nav-link" href="../pages/fotos.html">Fotos</a>
+                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                <a class="nav-link" href="../pages/vuelos.html">Vuelos</a>
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </div>    
         </div>
     </nav>
-
+    
     <main>
         <br>
-        <h1>
-            Atención!!! Sitio en construcción.
-        </h1>
-        <img src="../img/construccion.png" alt="En construcción">
-        <hr>
+        <div class="container-fluid">
+            <div class="row justify-content-around">
+                
+                <div class="col-xl-8 col-lg-8 fondoCajaAtencionVuelos">
+                    <p class="textoAtencionVuelosSuperior">
+                        Atención!
+                    </p>
+                    <p class="textoAtencionVuelosInferior">
+                        Debido a las restricciones dispuestas en los paises europeos y ciertos paises americanos para prevenir el contagio de Covid-19, en estos momentos nos vemos con una capacidad de destinos limitada. 
+                        <br>
+                        Les pedimos disculpas por las molestias ocasionadas.
+                    </p>
+                </div>
+                
+            </div>
+            <br>
+            <div class="row justify-content-around ">
+                <div class="col-xl-3 col-lg-4 col-md-8 textoDescripcionAeropuertosVuelos">
+                    <img class="img-fluid" src="../img/aeropuerto-chile.jpg" alt="Aeropuerto Santiago De Chile">
+                    <p>
+                        El <span class="textoNombreAeropuertosVuelos">Aeropuerto Internacional Arturo Merino Benítez</span> se encuentra en Pudahuel, al norte de Santiago de Chile, y posee 35 puentes de embarque, 26 estacionamientos remotos y de carga y dos pistas de aterrizaje.
+                        <br>
+                        En menos de 4 horas de vuelo, te encontrarás aterrizando en nuestro país vecino.
+                        <br>
+                        <span class="textoNombreAeropuertosVuelos">Reserva tu vuelo <a href="../pages/contacto.html">aquí.</a></span>
+                    </p>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-8 textoDescripcionAeropuertosVuelos">
+                    <img class="img-fluid" src="../img/aeropuerto-san-pablo.jpg" alt="Aeropuerto San Pablo">
+                    <p>
+                        El <span class="textoNombreAeropuertosVuelos">Aeropuerto Internacional de São Paulo-Guarulhos</span> se encuentra en el municipio de Guarulhos. Es uno de los aeropuertos principales de América Latina, siendo el que conecta a América del Sur con el resto del mundo.
+                        <br>
+                        Haciendo escala aquí podrás llegar a nuestros destinos en América del Norte y Europa.
+                        <br>
+                        <span class="textoNombreAeropuertosVuelos">Reserva tu vuelo <a href="../pages/contacto.html">aquí.</a></span>
+                    </p>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-8 textoDescripcionAeropuertosVuelos">
+                    <img class="img-fluid" src="../img/aeropuerto-mexico.jpg" alt="Aeropuerto Mexico">
+                    <p>
+                        El <span class="textoNombreAeropuertosVuelos">Aeropuerto Internacional de la Ciudad de México</span> Es el aeropuerto más transitado de México y América Latina, habiendo transportado más de 21 millones de pasajeros en 2020.
+                        <br>
+                        Desde aquí ofrecemos vuelos dentro de México, consultar por disponibilidad.
+                        <br>
+                        <span class="textoNombreAeropuertosVuelos">Reserva tu vuelo <a href="../pages/contacto.html">aquí.</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -61,6 +105,7 @@
         </div>
         </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
