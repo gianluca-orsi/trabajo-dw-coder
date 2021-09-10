@@ -14,3 +14,11 @@
     padding: 1vw 1vh;
     max-width: 95vw;
 }
+
+#gridVideo {
+    padding-top: 1vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    }

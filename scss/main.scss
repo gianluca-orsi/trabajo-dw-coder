@@ -14,5 +14,22 @@
 @import 'views/index';
 @import 'views/nosotros';
 @import 'views/contacto';
-@import 'views/vuelos'
+@import 'views/vuelos';
 
+@media only screen and (min-width: 768px){
+
+    .main__video {
+        max-width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 1200px){        
+    
+    .index {
+        max-width: 45vw;
+    }
+
+    .main__video {
+        max-width: 80vw;
+    }
+}
