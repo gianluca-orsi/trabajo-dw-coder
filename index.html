@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,100&family=Poppins:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/icon32x32.png" sizes="32x32">
     <title>Aeroskky! Viajes</title>
 </head>
@@ -21,14 +21,13 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand logoTexto" href="./index.html">
-                <img class="logoImg d-inline-block align-text-top" src="./img/logo.png">Aerosky!
+            <a class="navbar-brand logo__texto" href="./index.html">
+                <img class="logo d-inline-block align-text-top" src="./img/logo.png">Aerosky!
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse textoNavSecciones" id="navbarNav">
+            <div class="collapse navbar-collapse secciones secciones__texto" id="navbarNav">
                 <a class="nav-link" href="index.html">Inicio</a>
                 <a class="nav-link" href="./pages/fotos.html">Fotos</a>
                 <a class="nav-link" href="./pages/servicios.html">Servicios</a>
@@ -41,8 +40,8 @@
 
     <main>
         <div id="gridVideo">
-            <video src="videos/video.mp4" autoplay muted loop type="video/mp4"></video>
-            <p class="textoImgPrincipalIndex">
+            <video class="main__video" src="videos/video.mp4" autoplay muted loop type="video/mp4"></video>
+            <p class="index__imagen__principal__texto">
                 ~~~Sobrevolando el país y la región con destino a tus sueños~~~
             </p>
         </div>
@@ -50,23 +49,23 @@
         <br>
         <div class="container-fluid">
             <div class="row justify-content-around">
-                <div class="col-xl-6 divIndex">
-                    <p class="tituloArticulos">
+                <div class="col-xl-6 index articulos__texto">
+                    <p class="articulos__texto--titulo">
                         ¿Quienes somos?
                     </p>
 
-                    <p class="contenidoArticulos">
+                    <p class="articulos__texto--contenido">
                         Somos una compañía aérea fundada en 2017 con el objetivo de poder brindar viajes aéreos de gran
                         calidad a un precio accesible.
                     </p>
                 </div>
 
-                <div class="col-xl-6 divIndex">
-                    <p class="tituloArticulos">
+                <div class="col-xl-6 index articulos__texto">
+                    <p class="articulos__texto--titulo">
                         ¿Qué te ofrecemos?
                     </p>
 
-                    <p class="contenidoArticulos">
+                    <p class="articulos__texto--contenido">
                         Ya sea que quieras visitar los bellos paisajes que ofrece nuestro país, conocer la cultura que
                         nos rodea en sudamérica o conocer la fantástica arquitectura europea, tenemos vuelos disponibles
                         para que cumplas tu sueño de conocer el mundo.
@@ -75,17 +74,17 @@
             </div>
 
             <div class="row justify-content-around">
-                <div class="col-xl-6 divIndex">
-                    <p class="tituloArticulos">
+                <div class="col-xl-6 index articulos__texto">
+                    <p class="articulos__texto--titulo">
                         ¿Por qué elegirnos?
                     </p>
 
-                    <p class="contenidoArticulos">
+                    <p class="articulos__texto--contenido">
                         Porque somos una de las aerolíneas más confiables de América Latina, respaldada por más de
                         10.000 reseñas positivas de nuestros clientes destacando:
                     </p>
 
-                    <ul class="contenidoArticulos listasFondoIndex">
+                    <ul class="articulos__texto--contenido articulos__listas">
                         <li>Variedad de destinos</li>
                         <li>Puntualidad</li>
                         <li>Rápida atención</li>
@@ -93,16 +92,16 @@
                     </ul>
                 </div>
 
-                <div class="col-xl-9 divIndex">
-                    <p class="tituloArticulos">
+                <div class="col-xl-6 index articulos__texto">
+                    <p class="articulos__texto--titulo">
                         ¿Cómo podés reservar tu vuelo?
                     </p>
 
-                    <p class="contenidoArticulos">
+                    <p class="articulos__texto--contenido">
                         Es muy simple:
                     </p>
 
-                    <ol class="contenidoArticulos listasFondoIndex">
+                    <ol class="articulos__texto--contenido articulos__listas">
                         <li>Abrí nuestro <a href="pages/contacto.html#Formulario-contacto">formulario de contacto.</a>
                         </li>
                         <li>Completalo con tus datos y envialo.</li>
@@ -116,15 +115,15 @@
     </main>
 
     <footer>
-        <div class="flexNavFooter">
+        <div class="footer">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.344202650582!2d-60.33659098420727!3d-33.23128489368485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76c46e1dc19eb%3A0xe3ea28b5feb00ac0!2sIrigoyen%20955%2C%20S2919%20Villa%20Constituci%C3%B3n%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1628186180468!5m2!1ses-419!2sar"
                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <div class="textoFooter">
-                <p class="textoContacto">
+            <div class="footer__texto">
+                <p class="footer__texto--titulo">
                     <u>Contacto</u>
                 </p>
-                <ul class="listasFondoIndex">
+                <ul class="footer__texto--contenido articulos__listas">
                     <li>Tel.: 3400-12345678</li>
                     <li>Mail: info@aerosky.com.ar </li>
                     <li>Dirección: Irigoyen 955, Villa Constitución.</li>

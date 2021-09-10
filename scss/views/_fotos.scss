@@ -1,0 +1,15 @@
+.fotos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    img {
+        padding: 1vh 1vw;
+        max-width: 80vw;
+    }
+    img:hover {
+        animation-name: escalarImg;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+}

@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color-footer;
+    p {
+        padding-left: 0.5vw;
+    }
+}

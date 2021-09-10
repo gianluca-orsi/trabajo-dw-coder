@@ -1,0 +1,19 @@
+nav {
+    background-color: $color-nav;
+    top: 0px;
+}
+
+.logo {
+    height: 57px;
+    width: 80px;
+}
+
+.secciones {
+    a {
+        color: black;
+    }
+    a:hover {
+        background-image: linear-gradient(to top,#ffffff79, #ffffff38 );
+        color: black;
+    }
+}

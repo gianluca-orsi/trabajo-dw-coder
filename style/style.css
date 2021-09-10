@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -6,37 +6,37 @@
 html {
     font-size: 62.5%;
     
-}
-nav {
+} */
+/* nav {
     background-color: #A1FFFD;
     top: 0px;
-}
+} */
 
-body {
+/* body {
     background-image:url(../img/fondo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0%;
-}
+} */
 
-footer {
+/* footer {
     background-color: #8F522F;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
-video {
+/* video {
     max-width: 95vw;
 }
 
 main div video {
     padding: 1vw 1vh;
-}
+} */
 
-.logoImg {
+/* .logoImg {
     height: 57px;
     width: 80px;
 }
@@ -44,31 +44,32 @@ main div video {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 64px;
     color: black;
-}
+} */
 
 /* para seccion fotos */
 
-.flexFotos {
+/* .flexFotos {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-}
+} */
+
 /* solo para img en seccion fotos */
 
-.fotosImg {
+/* .fotosImg {
     padding: 1vh 1vw;
     max-width: 80vw;
-}
+} */
 
-.fotosImg:hover {
+/* .fotosImg:hover {
     animation-name: escalarImg;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-    }
+    } */
     
 
-@keyframes escalarImg {
+/* @keyframes escalarImg {
     20% {
         transform: scale(0.99);
     }
@@ -90,106 +91,107 @@ main div video {
     80%{
         transform: scale(0.99);
     }
-}
+} */
 
 /* para texto en nav y bajada del video en index*/
 
-.textoNavSecciones {
+/* .textoNavSecciones {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 2.4rem;
-}
+} */
 
-.textoNavSecciones a:hover {
+/* .textoNavSecciones a:hover {
     background-image: linear-gradient(to top,#ffffff79, #ffffff38 );
     color: black;
 }
 
 .textoNavSecciones a {
     color: black;
-}
+} */
 
-.textoImgPrincipalIndex {
+/* .textoImgPrincipalIndex {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 2.4rem;
-}
+} */
 
 /* para index */
 
-.divIndex{
+/* .divIndex{
     padding: 1vw 1vh;
     background-color:rgba(105, 96, 96, 0.212);
     max-width: 80vw;
     margin: 1vh 0vw;
-}
+} */
 
 /* titulo y contenido en articulos de index */
 
-.tituloArticulos {
+/* .tituloArticulos {
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
     line-height: 4.2rem;
     text-align: center;
-}
+} */
 
-.contenidoArticulos {
+/* .contenidoArticulos {
     font-family: 'Poppins', sans-serif;
     font-size: 2.4rem;
     line-height: 2.8rem;
-}
+} */
 
 /* para la mayoría de listas como las del fondo de index o contacto en footer */
-.listasFondoIndex {
+/* .listasFondoIndex {
     list-style-position: inside;
     margin-left: 25px;
-}
+} */
 
 /* para footer */
 
-.textoFooter {
+/* .textoFooter {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 2rem;
-}
+} */
 
-.textoContacto {
+/* .textoContacto {
     font-size: 2.4rem;
     text-decoration: underline;
-}
+} */
 
-.flexNavFooter {
+/* .flexNavFooter {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-}
+} */
 
-.flexNavFooter p, .flexNavFooter ul {
+/* .flexNavFooter p, .flexNavFooter ul {
     padding-left: 0.5vw;
 }
+ */
 
-.textoFotosNosotros {
+/* .textoFotosNosotros {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     line-height: 2.2rem;
-}
+} */
 
-.fondoRowsNosotros {
+/* .fondoRowsNosotros {
     background-color:rgba(105, 96, 96, 0.212);
     padding: 0.5vw 0.5vh;
-}
+} */
 
-.fondoRowsContacto {
+/* .fondoRowsContacto {
     padding: 1vw 1vh;
     margin: 1vw 1vh;
     border: 1px dotted black;
     background-color: rgba(105, 96, 96, 0.548);
     font-weight: 600;
-}
+} */
 
-.nombreTextoFotosNosotros {
+/* .nombreTextoFotosNosotros {
     font-weight: 900;
-}
+} */
 
-.textoAtencionVuelosSuperior {
+/* .textoAtencionVuelosSuperior {
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
     font-weight: 600;
@@ -202,14 +204,14 @@ main div video {
     font-size: 2rem;
     line-height: 2.4rem;
     text-align: center;
-}
+} */
 
-.fondoCajaAtencionVuelos {
+/* .fondoCajaAtencionVuelos {
     background-color: rgba(105, 96, 96, 0.548);
     border: 2px solid black;
-}
+} */
 
-.textoDescripcionAeropuertosVuelos {
+/* .textoDescripcionAeropuertosVuelos {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     line-height: 2rem;
@@ -218,18 +220,18 @@ main div video {
     margin: 0.5vw 0.5vh;
     padding: 0.5vw 0.5vh;
     
-}
+} */
 
-.textoNombreAeropuertosVuelos {
+/* .textoNombreAeropuertosVuelos {
     font-weight: 600;
-}
+} */
 
-.textoFormularioConsultas {
+/* .textoFormularioConsultas {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     line-height: 1.8rem;
     font-weight: 300;
-}
+} */
 
 #gridVideo {
     padding-top: 1vh;
