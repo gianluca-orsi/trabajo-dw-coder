@@ -1,11 +1,13 @@
 @import 'base/reset';
-@import 'base/typo';
+
 @import 'components/buttons';
 @import 'components/jumbo';
 @import 'components/animations';
 @import 'utilities/functions';
 @import 'utilities/mixins';
 @import 'utilities/variables';
+
+@import 'base/typo';
 @import 'layout/body';
 @import 'layout/navbar';
 @import 'layout/footer';
@@ -26,7 +28,7 @@
 @media only screen and (min-width: 1200px){        
     
     .index {
-        max-width: 45vw;
+        max-width: 65vw;
     }
 
     .main__video {

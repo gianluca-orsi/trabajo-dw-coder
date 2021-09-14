@@ -1,48 +1,54 @@
+.franklin {
+    font-family: $font-franklin;
+}
+
+.poppins {
+    font-family: $font-poppins;
+}
+
 .logo__texto {
-    font-family: 'Libre Franklin', sans-serif;
+    @extend .franklin;
     font-size: 64px;
     color: black;
 }
 
 .secciones__texto {
-    font-family: 'Libre Franklin', sans-serif;
+    @extend .franklin;
     font-size: 2.4rem;
 }
 
 .articulos__texto {
-    font-family: 'Poppins', sans-serif;
-}
-.articulos__texto--titulo {
-    font-size: 4rem;
-    line-height: 4.2rem;
-    text-align: center;
+    @extend .poppins;
+    &--titulo {
+        font-size: 3.6rem;
+        line-height: 3.8rem;
+        text-align: center;
+    }
+    &--contenido {
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
 }
 
-.articulos__texto--contenido {
-    font-size: 2.4rem;
-    line-height: 2.8rem;
-}
 
 .index__imagen__principal__texto {
-    font-family: 'Libre Franklin', sans-serif;
+    @extend .franklin;
     font-size: 2.4rem;
 }
 
 .footer__texto {
-    font-family: 'Libre Franklin', sans-serif;
-}
-
-.footer__texto--contenido {
-    font-size: 2rem;
-}
-
-.footer__texto--titulo {
-    font-size: 2.4rem;
-    text-decoration: underline;
+    @extend .franklin;
+    &--contenido {
+        font-size: 2rem;
+    }
+    &--titulo {
+        font-size: 2.4rem;
+        text-decoration: underline;
+    }
 }
 
 .nosotros__fotos__texto {
-    font-family: 'Poppins', sans-serif;
+    @extend .poppins;
     font-size: 2rem;
     line-height: 2.2rem;
 }
@@ -52,41 +58,36 @@
 }
 
 .atencion__texto {
-    font-family: 'Poppins', sans-serif;
+    @extend .poppins;
     text-align: center;
-}
-
-.atencion__texto--titulo {
-    font-size: 4rem;
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-.atencion__texto--contenido {
-    font-size: 2rem;
-    line-height: 2.4rem;
-}
-
-.atencion__texto--contacto {
-    font-weight: 600;
+    &--titulo {
+        font-size: 3.6rem;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    &--contenido {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+    &--contacto {
+        font-weight: 600;
+    }
 }
 
 .consultas__formulario__texto {
-    font-family: 'Poppins', sans-serif;
+    @extend .poppins;
     font-size: 1.6rem;
     line-height: 1.8rem;
     font-weight: 300;
 }
 
 .vuelos__caja__texto {
-    font-family: 'Poppins', sans-serif;
+    @extend .poppins;
     font-size: 1.6rem;
     line-height: 2rem;
+    &--nombres {
+        font-weight: 600;
+    }
 }
-
-.vuelos__caja__texto--nombres {
-    font-weight: 600;
-}
-
 
 

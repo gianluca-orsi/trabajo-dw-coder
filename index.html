@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Viajes, Vuelos, Despegar, Turismo, Brasil, Chile, Mexico, Europa, Vacaciones, Aerolinea, Aviones">
+    <meta name="description" content="Somos una compañía aérea fundada en 2017 con el objetivo de poder brindar viajes aéreos de gran calidad a un precio accesible.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,100&family=Poppins:wght@300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,100&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/icon32x32.png" sizes="32x32">
@@ -29,8 +30,7 @@
             </button>
             <div class="collapse navbar-collapse secciones secciones__texto" id="navbarNav">
                 <a class="nav-link" href="index.html">Inicio</a>
-                <a class="nav-link" href="./pages/fotos.html">Fotos</a>
-                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                <a class="nav-link" href="./pages/galeria.html">Galería</a>
                 <a class="nav-link" href="./pages/vuelos.html">Vuelos</a>
                 <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
                 <a class="nav-link" href="./pages/contacto.html">Contacto</a>
@@ -41,26 +41,29 @@
     <main>
         <div id="gridVideo">
             <video class="main__video" src="videos/video.mp4" autoplay muted loop type="video/mp4"></video>
-            <p class="index__imagen__principal__texto">
-                ~~~Sobrevolando el país y la región con destino a tus sueños~~~
-            </p>
+            <h1 class="index__imagen__principal__texto">
+                <strong>~~~Simpleza y rapidez en tierra, calma y tranquilidad en el aire~~~</strong>
+            </h1>
         </div>
 
         <br>
         <div class="container-fluid">
             <div class="row justify-content-around">
-                <div class="col-xl-6 index articulos__texto">
+                <div data-aos="flip-up" data-aos-once="false" class="col-10 index articulos__texto ">
                     <p class="articulos__texto--titulo">
                         ¿Quienes somos?
                     </p>
 
                     <p class="articulos__texto--contenido">
-                        Somos una compañía aérea fundada en 2017 con el objetivo de poder brindar viajes aéreos de gran
-                        calidad a un precio accesible.
+                        Somos una compañía aérea fundada en 2017 por 5 amigos fanáticos de los aviones que buscaban que la mayor cantidad de gente posible pudiera disfrutar de su pasión.
+                    <br>
+                        Nuestro objetivo es poder brindar viajes aéreos de gran calidad a un precio accesible a una gran variedad de destinos y con una comodidad superior a la de nuestros competidores.
                     </p>
                 </div>
+            </div>
 
-                <div class="col-xl-6 index articulos__texto">
+            <div class="row justify-content-around">
+                <div data-aos="flip-up" class="col-10 index articulos__texto">
                     <p class="articulos__texto--titulo">
                         ¿Qué te ofrecemos?
                     </p>
@@ -74,7 +77,7 @@
             </div>
 
             <div class="row justify-content-around">
-                <div class="col-xl-6 index articulos__texto">
+                <div data-aos="flip-up" class="col-10 index articulos__texto">
                     <p class="articulos__texto--titulo">
                         ¿Por qué elegirnos?
                     </p>
@@ -91,8 +94,10 @@
                         <li>Comodidad en los vuelos</li>
                     </ul>
                 </div>
+            </div>
 
-                <div class="col-xl-6 index articulos__texto">
+            <div class="row justify-content-around">
+                <div data-aos="flip-up" class="col-10 index articulos__texto">
                     <p class="articulos__texto--titulo">
                         ¿Cómo podés reservar tu vuelo?
                     </p>
@@ -108,6 +113,9 @@
                         <li>Uno de nuestros representantes se comunicará con vos dentro de las 24 horas posteriores al
                             envío para asesorarte.</li>
                     </ol>
+                    <p class="articulos__texto--contenido">
+                        ¡Listo! Ya estás un paso más cerca de surcar los cielos con nosotros. 
+                    </p>
                 </div>
             </div>
         </div>
@@ -135,6 +143,10 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
 

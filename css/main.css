@@ -6,80 +6,11 @@ html {
   font-size: 62.5%; }
 
 a {
-  text-decoration: none; }
-
-.logo__texto {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 64px;
-  color: black; }
-
-.secciones__texto {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 2.4rem; }
-
-.articulos__texto {
-  font-family: 'Poppins', sans-serif; }
-
-.articulos__texto--titulo {
-  font-size: 4rem;
-  line-height: 4.2rem;
-  text-align: center; }
-
-.articulos__texto--contenido {
-  font-size: 2.4rem;
-  line-height: 2.8rem; }
-
-.index__imagen__principal__texto {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 2.4rem; }
-
-.footer__texto {
-  font-family: 'Libre Franklin', sans-serif; }
-
-.footer__texto--contenido {
-  font-size: 2rem; }
-
-.footer__texto--titulo {
-  font-size: 2.4rem;
+  text-decoration: none;
+  color: blue;
   text-decoration: underline; }
-
-.nosotros__fotos__texto {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  line-height: 2.2rem; }
-
-.nosotros__fotos__texto--nombres {
-  font-weight: 900; }
-
-.atencion__texto {
-  font-family: 'Poppins', sans-serif;
-  text-align: center; }
-
-.atencion__texto--titulo {
-  font-size: 4rem;
-  font-weight: 600;
-  text-decoration: underline; }
-
-.atencion__texto--contenido {
-  font-size: 2rem;
-  line-height: 2.4rem; }
-
-.atencion__texto--contacto {
-  font-weight: 600; }
-
-.consultas__formulario__texto {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.8rem;
-  font-weight: 300; }
-
-.vuelos__caja__texto {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-  line-height: 2rem; }
-
-.vuelos__caja__texto--nombres {
-  font-weight: 600; }
+  a:hover {
+    color: purple; }
 
 @keyframes escalarImg {
   20% {
@@ -96,6 +27,68 @@ a {
     transform: scale(0.98); }
   80% {
     transform: scale(0.99); } }
+
+.franklin, .logo__texto, .secciones__texto, .index__imagen__principal__texto, .footer__texto {
+  font-family: "Libre Franklin", sans-serif; }
+
+.poppins, .articulos__texto, .nosotros__fotos__texto, .atencion__texto, .consultas__formulario__texto, .vuelos__caja__texto {
+  font-family: "Poppins", sans-serif; }
+
+.logo__texto {
+  font-size: 64px;
+  color: black; }
+
+.secciones__texto {
+  font-size: 2.4rem; }
+
+.articulos__texto--titulo {
+  font-size: 3.6rem;
+  line-height: 3.8rem;
+  text-align: center; }
+
+.articulos__texto--contenido {
+  font-size: 2rem;
+  line-height: 2.4rem; }
+
+.index__imagen__principal__texto {
+  font-size: 2.4rem; }
+
+.footer__texto--contenido {
+  font-size: 2rem; }
+
+.footer__texto--titulo {
+  font-size: 2.4rem;
+  text-decoration: underline; }
+
+.nosotros__fotos__texto {
+  font-size: 2rem;
+  line-height: 2.2rem; }
+
+.nosotros__fotos__texto--nombres {
+  font-weight: 900; }
+
+.atencion__texto {
+  text-align: center; }
+  .atencion__texto--titulo {
+    font-size: 3.6rem;
+    font-weight: 600;
+    text-decoration: underline; }
+  .atencion__texto--contenido {
+    font-size: 2rem;
+    line-height: 2.2rem; }
+  .atencion__texto--contacto {
+    font-weight: 600; }
+
+.consultas__formulario__texto {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 300; }
+
+.vuelos__caja__texto {
+  font-size: 1.6rem;
+  line-height: 2rem; }
+  .vuelos__caja__texto--nombres {
+    font-weight: 600; }
 
 body {
   background-image: url(../img/fondo.jpg);
@@ -143,9 +136,10 @@ nav {
 
 .index {
   padding: 1vw 1vh;
-  background-color: rgba(105, 96, 96, 0.212);
-  max-width: 80vw;
-  margin: 1vh 0vw; }
+  background-color: rgba(105, 96, 96, 0.548);
+  /* max-width: 80vw; */
+  margin: 5vh 0vw;
+  border: 2px solid black; }
 
 .articulos__listas {
   list-style-position: inside;
@@ -168,19 +162,15 @@ nav {
 .nosotros__rows--fondo {
   background-color: rgba(105, 96, 96, 0.212); }
 
-.contacto__rows {
-  padding: 1vw 1vh;
-  margin: 1vw 1vh;
-  border: 1px dotted black; }
-
-.contacto__rows--fondo {
-  background-color: rgba(105, 96, 96, 0.548); }
-
-.atencion__caja {
+.atencion__caja, .contacto__rows {
   border: 2px solid black; }
 
-.atencion__caja--fondo {
+.atencion__caja--fondo, .contacto__rows--fondo {
   background-color: rgba(105, 96, 96, 0.548); }
+
+.contacto__rows {
+  padding: 1vw 1vh;
+  margin: 1vw 1vh; }
 
 .vuelos__caja {
   border: 1px solid black;
@@ -188,7 +178,7 @@ nav {
   padding: 0.5vw 0.5vh; }
 
 .vuelos__caja--fondo {
-  background-color: rgba(105, 96, 96, 0.212); }
+  background-color: rgba(105, 96, 96, 0.548); }
 
 @media only screen and (min-width: 768px) {
   .main__video {
@@ -196,6 +186,6 @@ nav {
 
 @media only screen and (min-width: 1200px) {
   .index {
-    max-width: 45vw; }
+    max-width: 65vw; }
   .main__video {
     max-width: 80vw; } }

@@ -1,8 +1,9 @@
 .index{
-        padding: 1vw 1vh;
-        background-color:rgba(105, 96, 96, 0.212);
-        max-width: 80vw;
-        margin: 1vh 0vw;
+    padding: 1vw 1vh;
+    background-color: $gris-oscuro-transparente-oscuro;
+    /* max-width: 80vw; */
+    margin: 5vh 0vw;
+    border: 2px solid black;
 }
 
 .articulos__listas {

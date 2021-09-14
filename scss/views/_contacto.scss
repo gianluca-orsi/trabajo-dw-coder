@@ -1,17 +1,18 @@
-.contacto__rows {
-    padding: 1vw 1vh;
-    margin: 1vw 1vh;
-    border: 1px dotted black;
-}
-
-.contacto__rows--fondo {
-    background-color: $gris-oscuro-transparente-claro;
-}
-
 .atencion__caja {
     border: 2px solid black;
 }
 
 .atencion__caja--fondo {
-    background-color: $gris-oscuro-transparente-claro;
+    background-color: $gris-oscuro-transparente-oscuro;
 }
+
+.contacto__rows {
+    padding: 1vw 1vh;
+    margin: 1vw 1vh;
+    @extend .atencion__caja;
+}
+
+.contacto__rows--fondo {
+    @extend .atencion__caja--fondo
+}
+
