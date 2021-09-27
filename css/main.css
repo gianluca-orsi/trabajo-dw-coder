@@ -39,7 +39,7 @@ a {
   color: black; }
 
 .secciones__texto {
-  font-size: 2.4rem; }
+  font-size: 2rem; }
 
 .articulos__texto--titulo {
   font-size: 3.6rem;
@@ -47,22 +47,22 @@ a {
   text-align: center; }
 
 .articulos__texto--contenido {
-  font-size: 2rem;
-  line-height: 2.4rem; }
+  font-size: 1.6rem;
+  line-height: 2rem; }
 
 .index__imagen__principal__texto {
-  font-size: 2.4rem; }
-
-.footer__texto--contenido {
   font-size: 2rem; }
 
+.footer__texto--contenido {
+  font-size: 1.6rem; }
+
 .footer__texto--titulo {
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-decoration: underline; }
 
 .nosotros__fotos__texto {
-  font-size: 2rem;
-  line-height: 2.2rem; }
+  font-size: 1.6rem;
+  line-height: 2rem; }
 
 .nosotros__fotos__texto--nombres {
   font-weight: 900; }
@@ -74,14 +74,14 @@ a {
     font-weight: 600;
     text-decoration: underline; }
   .atencion__texto--contenido {
-    font-size: 2rem;
-    line-height: 2.2rem; }
+    font-size: 1.6rem;
+    line-height: 2rem; }
   .atencion__texto--contacto {
     font-weight: 600; }
 
 .consultas__formulario__texto {
   font-size: 1.6rem;
-  line-height: 1.8rem;
+  line-height: 2em;
   font-weight: 300; }
 
 .vuelos__caja__texto {
@@ -159,11 +159,14 @@ nav {
 .nosotros__rows {
   padding: 0.5vw 0.5vh; }
 
-.nosotros__rows--fondo {
-  background-color: rgba(105, 96, 96, 0.212); }
+.nosotros__bloques {
+  border: 2px solid black;
+  background-color: rgba(105, 96, 96, 0.548);
+  border-radius: 10px; }
 
 .atencion__caja, .contacto__rows {
-  border: 2px solid black; }
+  border: 2px solid black;
+  border-radius: 10px; }
 
 .atencion__caja--fondo, .contacto__rows--fondo {
   background-color: rgba(105, 96, 96, 0.548); }
@@ -175,7 +178,8 @@ nav {
 .vuelos__caja {
   border: 1px solid black;
   margin: 0.5vw 0.5vh;
-  padding: 0.5vw 0.5vh; }
+  padding: 1vw 1vh;
+  border-radius: 10px; }
 
 .vuelos__caja--fondo {
   background-color: rgba(105, 96, 96, 0.548); }
