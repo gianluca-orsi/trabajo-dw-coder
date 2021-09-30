@@ -3,8 +3,13 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    background-color: $color-footer;
     p {
         padding-left: 0.5vw;
     }
+}
+
+footer {
+    background-image:url(../img/fondoFooter.png);
+    background-position: center;
+    background-size:contain;
 }

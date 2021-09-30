@@ -116,10 +116,14 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
-  background-color: #8F522F; }
+  align-items: center; }
   .footer p {
     padding-left: 0.5vw; }
+
+footer {
+  background-image: url(../img/fondoFooter.png);
+  background-position: center;
+  background-size: contain; }
 
 .fotos {
   display: flex;
@@ -150,7 +154,6 @@ nav {
   max-width: 95vw; }
 
 #gridVideo {
-  padding-top: 1vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -183,6 +186,9 @@ nav {
 
 .vuelos__caja--fondo {
   background-color: rgba(105, 96, 96, 0.548); }
+
+main {
+  margin: 5vh 0vw; }
 
 @media only screen and (min-width: 768px) {
   .main__video {
