@@ -10,10 +10,10 @@ html {
 
 a {
     text-decoration: none;
-    color: #A1FFFD;
+    color: #A01601;
     text-decoration: underline;
     &:hover {
-        color: purple;
+        color: #a0018b;
     }
 }
 
@@ -22,4 +22,8 @@ ul {
         list-style-type: none;
         list-style-image: url(../img/list-item.png);
     }
+}
+
+iframe {
+    margin: 1vw 1vh;
 }

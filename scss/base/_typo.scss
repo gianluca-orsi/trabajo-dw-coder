@@ -1,15 +1,16 @@
 .franklin {
     font-family: $font-franklin;
+    color: black;
 }
 
 .poppins {
     font-family: $font-poppins;
+    color: black;
 }
 
 .logo__texto {
     @extend .franklin;
     font-size: 64px;
-    color: black;
 }
 
 .secciones__texto {
