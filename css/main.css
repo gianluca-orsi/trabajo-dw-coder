@@ -80,12 +80,15 @@ iframe {
   .atencion__texto--titulo {
     font-size: 3.6rem;
     font-weight: 600;
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: black; }
   .atencion__texto--contenido {
     font-size: 1.6rem;
-    line-height: 2rem; }
+    line-height: 2rem;
+    color: black; }
   .atencion__texto--contacto {
-    font-weight: 600; }
+    font-weight: 600;
+    color: black; }
 
 .consultas__formulario__texto {
   font-size: 1.6rem;
@@ -121,10 +124,10 @@ nav {
   color: black; }
 
 .footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; }
+  /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; */ }
   .footer p {
     padding-left: 0.5vw; }
   .footer p, .footer li {
@@ -132,6 +135,11 @@ nav {
 
 footer {
   background-color: rgba(105, 96, 96, 0.212); }
+  footer div {
+    width: 100%; }
+
+.rs-icon {
+  max-width: 32px; }
 
 .fotos {
   display: flex;
@@ -206,18 +214,15 @@ footer {
 main {
   margin: 5vh 0vw; }
 
-/* @media only screen and (min-width: 1px) {
-    .vuelos__caja {
-        margin: 1.5vw 1.5vh;
-    }
+@media only screen and (min-width: 1px) {
+  iframe {
+    max-width: 80vw; } }
 
-    .nosotros__bloques {
-        margin: 1.5 vw 1.5 vh;
-    }
-} */
 @media only screen and (min-width: 768px) {
   .main__video {
-    max-width: 80vw; } }
+    max-width: 80vw; }
+  iframe {
+    max-width: 35vw; } }
 
 @media only screen and (min-width: 1200px) {
   .index {

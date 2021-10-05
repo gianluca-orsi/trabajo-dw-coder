@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" href="../img/icon32x32.png" sizes="32x32">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Aeroskky! Viajes - Nosotros</title>
 </head>
 
@@ -38,8 +39,18 @@
 
     <main>
         <div class="container-fluid">
+            <div class="row justify-content-around">
+                <div class="col-8-lg col-10 contacto__rows m-4 m-lg-2 text-center">
+                    <p class="atencion__texto--titulo">
+                        Nuestro equipo en el aire
+                    </p>
+                    <p class="atencion__texto--contenido">
+                        Estos son las personas que se encargan de que puedas llegar a tu destino de la forma más rápida y cómoda posible
+                    </p>
+                </div>
+            </div>
             <div class="row nosotros__rows p-0 justify-content-around">
-                <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-wrap flex-shrink-1 justify-content-around m-2 m-lg -2 p-3 px-4 nosotros__bloques"> 
+                <div class="col-xl-3 col-lg-5 col-md-8 d-flex flex-wrap flex-shrink-1 justify-content-around m-2 m-lg -2 p-3 px-4 nosotros__bloques" data-aos="flip-up"> 
                     <div class="align-self-center text-center">
                         <img src="../img/piloto1.jpg" alt="piloto1" class="img-fluid img-thumbnail">
                     </div>
@@ -49,7 +60,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-wrap flex-shrink-1 justify-content-around m-2 m-lg-2 p-3 px-4 nosotros__bloques">
+                <div class="col-xl-3 col-lg-5 col-md-8 d-flex flex-wrap flex-shrink-1 justify-content-around m-2 m-lg-2 p-3 px-4 nosotros__bloques" data-aos="flip-up">
                     <div>
                         <img src="../img/piloto2.jpg" alt="piloto2" class="img-fluid img-thumbnail">
                     </div>
@@ -60,7 +71,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-wrap flex-shrink-1 justify-content-around m-2 m-lg-2 p-3 px-4 nosotros__bloques">
+                <div class="col-xl-3 col-lg-5 col-md-8 d-flex flex-wrap flex-shrink-1 justify-content-around m-2 m-lg-2 p-3 px-4 nosotros__bloques" data-aos="flip-up">
                     <div>
                         <img src="../img/piloto3.jpg" alt="piloto3" class="img-fluid img-thumbnail">
                     </div>
@@ -70,15 +81,75 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-wrap flex-shrink-1 justify-content-around m-2 m-lg-2 p-3 px-4 nosotros__bloques">
-                    <div>
-                        <img src="../img/piloto4.jpg" alt="piloto4" class="img-fluid img-thumbnail">
-                    </div>
-                    <div>
-                        <p class="nosotros__fotos__texto">
-                            <span class="nosotros__fotos__texto--nombres">Lorenzo Rossi</span> es nuestro jefe de ingenieros y quien se encarga de 
-                            mantener a nuestros aviones funcionando perfectamente y listos para ir a todos los destinos que ofrecemos.
+                <div class="row justify-content-around">
+                    <div class="col-8-lg col-10 contacto__rows m-4 m-lg-2 text-center">
+                        <p class="atencion__texto--titulo">
+                            Nuestro equipo en tierra
                         </p>
+                        <p class="atencion__texto--contenido">
+                            Son quienes se encargan de reparar y realizar el mantenimiento de nuestra flota, responder tus consultas, actualizar el sitio y planificar nuevas rutas para llevarte a aquellos lugares que siempre quisiste visitar
+                        </p>
+                    </div>
+                </div>
+                <div class="row nosotros__rows p-0 justify-content-around">
+                    <div class="col-xl-3 col-lg-5 col-md-8 d-flex flex-wrap flex-shrink-1 justify-content-around m-2 m-lg-2 p-3 px-4 nosotros__bloques" data-aos="flip-up">
+                        <div>
+                            <img src="../img/piloto4.jpg" alt="piloto4" class="img-fluid img-thumbnail">
+                        </div>
+                        <div>
+                            <p class="nosotros__fotos__texto">
+                                <span class="nosotros__fotos__texto--nombres">Lorenzo Rossi</span> es nuestro jefe de ingenieros y quien se encarga de 
+                                mantener a nuestros aviones funcionando perfectamente y listos para ir a todos los destinos que ofrecemos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-md-8 d-flex flex-wrap flex-shrink-1 justify-content-around m-2 m-lg-2 p-3 px-4 nosotros__bloques" data-aos="flip-up">
+                        <div>
+                            <img src="../img/mujer-computadora.jpg" alt="mujer-computadora" class="img-fluid img-thumbnail">
+                        </div>
+                        <div>
+                            <p class="nosotros__fotos__texto">
+                                <span class="nosotros__fotos__texto--nombres">Clara Sánchez</span> es quién se encarga de diseñar nuestras rutas de vuelo y buscar nuevos puntos a los que visitar.
+                                <br>
+                                Si realizás alguna consulta sobre qué lugares pueden visitarse en los destinos a los que vamos, es muy probable que Clara sea quién te responda. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-5 col-md-8 d-flex flex-wrap flex-shrink-1 justify-content-around m-2 m-lg-2 p-3 px-4 nosotros__bloques" data-aos="flip-up">
+                        <div>
+                            <img src="../img/hombre-escritorio.jpg" alt="hombre-escritorio" class="img-fluid img-thumbnail">
+                        </div>
+                        <div>
+                            <p class="nosotros__fotos__texto">
+                                <span class="nosotros__fotos__texto--nombres">Luis Romero</span> está encargado de actualizar este sitio, nuestras redes sociales y contestar la mayor parte de las consultas que nos llegan.
+                                <br>
+                                Si tenés alguna sugerencia o duda, comunicate con él a través de nuestros medios de contacto que se encuentran al final de está página.
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row justify-content-around">
+                    <div class="col-8-lg col-10 contacto__rows m-4 m-lg-2 text-center">
+                        <p class="atencion__texto--titulo">
+                            Nuestro miembro más importante
+                        </p>
+                        <p class="atencion__texto--contenido">
+                            Se encuentra tanto en tierra como en aire y es quién hace posible que podamos funcionar con la excelencia que nos caracteriza
+                        </p>
+                    </div>
+                </div> 
+                <div class="row nosotros__rows p-0 justify-content-around">
+                    <div class="col-xl-3 col-lg-5 col-md-8 d-flex flex-wrap flex-shrink-1 justify-content-around m-2 m-lg-2 p-3 px-4 nosotros__bloques" data-aos="flip-up">
+                        <div>
+                            <img src="../img/hombre-apuntando.jpg" alt="hombre-apuntando" class="img-fluid img-thumbnail">
+                        </div>
+                        <div>
+                            <p class="nosotros__fotos__texto">
+                                <span class="nosotros__fotos__texto--nombres">Vos</span> sos quien nos hace ser lo que somos, permitiendonos acompañarte a través del mundo y ser parte de tu vida.
+                                <br>
+                                Gracias a los comentarios y la confianza de clientes como vos es que mejoramos día a día, haciendo felices a muchas más personas que, como vos, nos eligen para surcar los cielos.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,23 +158,48 @@
 
 
     <footer>
-        <div class="footer">   
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.344202650582!2d-60.33659098420727!3d-33.23128489368485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76c46e1dc19eb%3A0xe3ea28b5feb00ac0!2sIrigoyen%20955%2C%20S2919%20Villa%20Constituci%C3%B3n%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1628186180468!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <div class="footer__texto">
-            <p class="footer__texto--titulo">
-                <u>Contacto</u>
-            </p>
-            <ul class="footer__texto--contenido articulos__listas">
-                <li>Tel.: 3400-12345678</li>
-                <li>Mail: info@aerosky.com.ar </li>
-                <li>Dirección: Irigoyen 955, Villa Constitución.</li>
-                <li>Horario de atención: de 9 hs. a 15 hs.</li>
-                <li><a href="../pages/contacto.html#Formulario-contacto"><strong>Formulario de contacto</strong></a> </li>
-            </ul>
-        </div>
+        <div class="container-fluid footer">
+            <div class="row justify-content-around">
+                <div class="col-xl-4 col-md-6 col-10 text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.344202650582!2d-60.33659098420727!3d-33.23128489368485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76c46e1dc19eb%3A0xe3ea28b5feb00ac0!2sIrigoyen%20955%2C%20S2919%20Villa%20Constituci%C3%B3n%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1628186180468!5m2!1ses-419!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="col-xl-4 col-md-6 col-10 align-self-center">
+                    <div class="footer__texto">
+                        <p class="footer__texto--titulo">
+                            <u>Contacto</u>
+                        </p>
+                        <ul class="footer__texto--contenido articulos__listas">
+                            <li>Tel.: 3400-12345678</li>
+                            <li>Mail: info@aerosky.com.ar </li>
+                            <li>Dirección: Irigoyen 955, Villa Constitución.</li>
+                            <li>Horario de atención: de 9 hs. a 15 hs.</li>
+                            <li><a href="../pages/contacto.html#Formulario-contacto"><strong>Formulario de contacto</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-10 align-self-end text-center">
+                    <a href="https://www.facebook.com" target="_blank"><img src="../img/fb-icon.png" alt="Facebook" class="rs-icon"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="../img/tw-icon.png" alt="Twitter" class="rs-icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../img/insta-icon.png" alt="Instagram" class="rs-icon"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer__texto footer__texto--contenido">
+                        © <a href="https://github.com/gianluca-orsi" target="_blank">Gianluca Orsi</a> 2021
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

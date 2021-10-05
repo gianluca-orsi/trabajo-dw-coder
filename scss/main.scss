@@ -22,20 +22,20 @@ main {
     margin: 5vh 0vw;
 }
 
-/* @media only screen and (min-width: 1px) {
-    .vuelos__caja {
-        margin: 1.5vw 1.5vh;
+@media only screen and (min-width: 1px){
+    iframe {
+        max-width: 80vw;
     }
-
-    .nosotros__bloques {
-        margin: 1.5 vw 1.5 vh;
-    }
-} */
+}
 
 @media only screen and (min-width: 768px){
 
     .main__video {
         max-width: 80vw;
+    }
+
+    iframe {
+        max-width: 35vw
     }
 
 }

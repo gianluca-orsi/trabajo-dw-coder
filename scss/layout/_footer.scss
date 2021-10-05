@@ -1,8 +1,8 @@
 .footer {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
     p {
         padding-left: 0.5vw;
     }
@@ -14,4 +14,11 @@
 
 footer {
     background-color: $gris-oscuro-transparente-claro;
+    div {
+        width: 100%;
+    }
+}
+
+.rs-icon {
+    max-width: 32px;
 }
