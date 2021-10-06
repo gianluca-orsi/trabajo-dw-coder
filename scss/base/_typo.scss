@@ -52,10 +52,19 @@
     @extend .poppins;
     font-size: 1.6rem;
     line-height: 2rem;
+    &--nombres {
+        font-weight: 900;
+    }
 }
 
-.nosotros__fotos__texto--nombres{
-    font-weight: 900;
+.galeria {
+    &__bajada {
+        &--texto {
+            @extend .poppins;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+        }
+    }
 }
 
 .atencion__texto {

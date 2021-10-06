@@ -39,7 +39,7 @@ iframe {
   font-family: "Libre Franklin", sans-serif;
   color: black; }
 
-.poppins, .articulos__texto, .nosotros__fotos__texto, .atencion__texto, .consultas__formulario__texto, .vuelos__caja__texto {
+.poppins, .articulos__texto, .nosotros__fotos__texto, .galeria__bajada--texto, .atencion__texto, .consultas__formulario__texto, .vuelos__caja__texto {
   font-family: "Poppins", sans-serif;
   color: black; }
 
@@ -71,9 +71,12 @@ iframe {
 .nosotros__fotos__texto {
   font-size: 1.6rem;
   line-height: 2rem; }
+  .nosotros__fotos__texto--nombres {
+    font-weight: 900; }
 
-.nosotros__fotos__texto--nombres {
-  font-weight: 900; }
+.galeria__bajada--texto {
+  font-size: 1.2rem;
+  line-height: 1.4rem; }
 
 .atencion__texto {
   text-align: center; }
